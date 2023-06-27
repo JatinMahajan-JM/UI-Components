@@ -1,0 +1,121 @@
+.footer-m-grid {
+    color: white;
+    background: black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 3rem;
+    font-size: 14px;
+}
+
+.footer-m-childs>ul {
+    list-style: none;
+}
+
+.footer-m-childs>ul>li:nth-child(1) {
+    letter-spacing: 0.2rem;
+    font-size: 13px;
+}
+
+.footer-m-childs>ul>li {
+    margin-bottom: 1rem;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form>input,
+button {
+    margin-bottom: 1rem;
+    font-size: 13px;
+    padding: 0.5em 0;
+    color: white;
+    font-weight: bold;
+}
+
+.newsletter-form>input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.newsletter-form>input::placeholder {
+    color: gainsboro;
+}
+
+.newsletter-form>button {
+    background: black;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.newsletter-form {
+    margin: 1rem 0;
+}
+
+.newsletter-headings h2,
+p {
+    margin-bottom: 1rem;
+}
+
+.newsletter-headings h2 {
+    font-size: 13px;
+    letter-spacing: 0.2rem;
+}
+
+.newsletter-error {
+    font-family: monospace;
+    color: red;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.newsletter-success {
+    font-family: monospace;
+    color: rgb(0, 165, 0);
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-m-grid {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer-m-grid {
+        padding: 1rem;
+        grid-template-columns: 60% 40%;
+        font-size: 15px;
+    }
+
+    .newsletter-form>input,
+    button {
+        font-size: 15px;
+    }
+
+    .footer-m-childs>ul>li:nth-child(1) {
+        letter-spacing: 0.2rem;
+        font-size: calc(16px*.85);
+        font-weight: bold;
+    }
+
+    .footer-m-childs:nth-child(1),
+    .footer-m-childs:nth-child(3) {
+        margin-bottom: 2rem;
+    }
+
+    .footer-m-childs:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .footer-m-childs:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}

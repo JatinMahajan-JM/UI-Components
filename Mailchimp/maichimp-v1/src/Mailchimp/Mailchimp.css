@@ -1,0 +1,73 @@
+.newsletter-headings {
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.newsletter-form > input, button {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    padding: 1em;
+    color: #777777;
+}
+
+.newsletter-form > input {
+    border: 1px solid rgba(0,0,0,.12);
+    outline: none;
+}
+
+.newsletter-form > input::placeholder {
+    color: gainsboro;
+}
+
+.newsletter-form > button {
+    background: black;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.newsletter-form {
+    margin: 2rem;
+}
+
+.newsletter-headings h2, p {
+    margin-bottom: 1rem;
+}
+
+.n-width {
+    width: 100%;
+}
+
+.newsletter-error {
+    font-family: monospace;
+    color: red;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.newsletter-success {
+    font-family: monospace;
+    color: rgb(0, 165, 0);
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .n-width {
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .n-width {
+        width: 50%;
+    }
+}
